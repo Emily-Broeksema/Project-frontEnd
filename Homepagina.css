@@ -1,207 +1,219 @@
+@import "Homepagina.css";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Menu */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: space-around; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #111;
 }
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: #111;
-}
-
-/* Profile section (foto + naam + opleiding) */
 .profile-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
-
 .profile-section figure {
-    margin: 0;
+  margin: 0;
 }
-
-.profile-section img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.profile-section figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
-
 .profile-section article {
-    margin-left: 20px;
+  margin-left: 20px;
+}
+.profile-section article h2, .profile-section article h3 {
+  margin: 0;
 }
 
-.profile-section h2, .profile-section h3 {
-    margin: 0;
-}
-
-
-/* Nationaliteit + Geboorte datum */
 .profile-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
 }
 
-
-/* Over mij + Doelstelling section */
 .over-doel {
-    margin: auto; 
-    padding: 20px;
-    background-color: #f2f2f2;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    margin-top: 40px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  margin-top: 40px;
 }
 .over-doel p {
-    margin: 0;
+  margin: 0;
 }
 
-
-/* Skills */
 .skills {
-    margin: auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start; 
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 .skills h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 .skills ul {
-    margin-top: 60px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
+  margin-top: 60px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+.skills ul h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+.skills ul li {
+  margin-bottom: 5px;
+  margin-left: 65px;
+}
+.skills ul li span {
+  position: relative;
+  left: -55px;
 }
 
-.skills h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-right: 50px;
-}
-
-.skills li {
-    margin-bottom: 5px;
-    margin-left: 65px;
-}
-
-.skills li span {
-    position: relative;
-    left: -55px;
-}
-
-
-/* Educatie */
 .educatie {
-    margin: auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    width: 80%;
-    max-width: 500px; 
-    margin-top: 80px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 80px;
+}
+.educatie .ed-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.educatie .ed-h3 {
+  margin-bottom: 5px;
+}
+.educatie .ed2-h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.educatie .ed-ul, .educatie .ed-h3 {
+  margin-left: 20px;
 }
 
-.ed-header {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.ed-h3 {
-    margin-bottom: 5px;
-}
-
-.ed2-h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.ed-ul, .ed-h3 {
-    margin-left: 20px;
-}
-
-
-/* Persoonlijke kwaliteiten + Hobby's */
 .phcontainer {
-    margin-left: 300px;
-    display: grid;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.personal-kwaliteiten {
+    margin-left: 350px;
+}
+
+.phcontainer .personal-kwaliteiten, .phcontainer .hobbys {
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: calc(50% - 15px);
+  margin-top: 80px;
+  text-align: center;
+}
+.phcontainer .personal-kwaliteiten ul, .phcontainer .hobbys ul {
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+.phcontainer .personal-kwaliteiten ul li, .phcontainer .hobbys ul li {
+  margin-bottom: 2px;
+}
+@media screen and (min-width: 768px) {
+  .phcontainer {
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .phcontainer {
+    margin-left: 0;
+  }
 }
 
-.personal-kwaliteiten, .hobbys {
-    padding: 20px;
-    background-color: #f2f2f2;
-    width: calc(50% - 15px);
-    margin-top: 80px;
-    text-align: center;
-}
-
-.personal-kwaliteiten ul, .hobbys ul {
-    margin-top: 10px;
-    list-style-type: none;
-    padding: 0;
-}
-
-.personal-kwaliteiten li, .hobbys li {
-    margin-bottom: 2px;
-}
-
-
-/* Footer */
 .footer {
-    margin-top: 80px;
-    background-color: #333;
-    color: #fff; 
-    padding: 20px;
-    text-align: center;
+  margin-top: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
-
 .footer h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 .footer ul {
-    list-style-type: none; 
-    padding: 0; 
-    columns: 2; 
+  list-style-type: none;
+  padding: 0;
+  -moz-columns: 2;
+       columns: 2;
+}
+.footer ul li {
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 100%;
 }
 
-.footer ul li {
-    margin-bottom: 5px; 
-    display: inline-block;
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .profile-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
+.btn-secondary, .btn-primary {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.parent {
+  color: red;
+}
+.child .parent {
+  font-weight: bold;
+}/*# sourceMappingURL=Homepagina.css.map */
