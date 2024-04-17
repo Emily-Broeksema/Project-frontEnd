@@ -11,8 +11,8 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    display: flex; /* Make the list items horizontal */
-    justify-content: space-around; /* Add space between the list items */
+    display: flex;
+    justify-content: space-around; 
 }
 
 nav li a {
@@ -34,7 +34,7 @@ nav li a:hover {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: center; /* Center the text within the section */
+    text-align: center;
 }
 
 .profile-section figure {
@@ -67,7 +67,7 @@ nav li a:hover {
 
 /* Over mij + Doelstelling section */
 .over-doel {
-    margin: auto; /* Center the section horizontally */
+    margin: auto; 
     padding: 20px;
     background-color: #f2f2f2;
     width: 80%;
